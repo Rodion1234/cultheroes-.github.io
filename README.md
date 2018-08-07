@@ -1,1 +1,1 @@
-# cultheroes-.github.io
+# cultheroes.github.io
