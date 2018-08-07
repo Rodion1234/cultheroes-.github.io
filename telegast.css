@@ -1,0 +1,184 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 960px;
+}
+
+.hero {
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+}
+
+.btn-alt {
+  border: 1px solid #dfe2e5;
+  padding: 10px 30px;
+}
+
+.col-1-3 {
+  width: 20%;
+  margin: 0 auto;
+}
+.col-2-3 {
+  width: 70%;
+  margin: 0 auto;
+}
+.col-1-3,
+.col-2-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+.logo {
+  border-top: 4px solid #648880;
+  font-size: 48px;
+  line-height: 44px;
+  padding: 20px 0 22px 0;
+}
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin: 22px 0 22px 0;
+  text-align: right;
+}
+
+
+.row {
+  
+   background: -webkit-linear-gradient(to bottom, #FF9200, #D86F74);
+  background: -moz-linear-gradient(to bottom, #FF9200, #D86F74);
+  background: linear-gradient(to bottom, #FF9200, #D86F74);
+}
+.row-alt {
+  background: #cbe2c1;
+  background: -webkit-linear-gradient(to right, #F8C888, #F8C888);
+  background: -moz-linear-gradient(to right, #F8C888, #F8C888);
+  background: linear-gradient(to right, #F8C888, #F8C888);
+}
+.row-news {
+   background: #cbe2c1;
+  background: -webkit-linear-gradient(to right, #F8C888, #F8C888);
+  background: -moz-linear-gradient(to right, #F8C888, #F8C888);
+  background: linear-gradient(to right, #F8C888, #F8C888);
+}
+
+
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+
+body {
+  background: -webkit-linear-gradient(to bottom, #E1C8A6, #D69FB0);
+  background: -moz-linear-gradient(to bottom, #E1C8A6, #D69FB0);
+  background: linear-gradient(to bottom, #E1C8A6, #D69FB0);
+  font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3, h4 {
+  color: #fff;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+  color: #111;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+strong {
+  font-weight: 400;
+}
+cite, em {
+  font-style: italic;
+}
+
+a {
+	color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #a9b2b9;
+}
+
+p.p-black{
+  color: red;
+}
+
+p.center-cl{
+	text-align:center;
+}
