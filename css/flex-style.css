@@ -1,0 +1,31 @@
+.f{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.fd-c{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.jc-c{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.jc-s{
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.jc-e{
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.ai-c{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
