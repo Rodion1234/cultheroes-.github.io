@@ -26,6 +26,14 @@ header nav ul li:hover {
     color: white;
     cursor: pointer;
 }
+header nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    color:white;
+}
 
 header nav ul li:first-child {
     margin-right: auto;

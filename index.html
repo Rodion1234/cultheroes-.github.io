@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 
 <head>
     <meta charset="UTF-8">
@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <header class="f fd-c jc-c ai-c">
+    <header id="home" class="f fd-c jc-c ai-c">
         <nav>
             <ul class="f jc-e ai-c header-ul-cor">
-                <li><img src="image/header/Livello%208.png" alt="logo"></li>
-                <li>Home</li>
-                <li>Products</li>
-                <li>About us</li>
+                <li><a htef="index.html"><img src="image/header/Livello%208.png" alt="logo"></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#aboutus">About us</a></li>
                 <li><img src="image/header/fa-shopping-cart.png" alt="Shopping cart"></li>
             </ul>
         </nav>
@@ -26,7 +26,7 @@
             dolore
             magna aliqua.</span>
     </header>
-    <main class="f fd-c">
+    <main id="products" class="f fd-c">
         <nav class="f ai-c main-nav-cor">
             <ul class="f ai-c main-nav-cor-ul">
                 <li><button>Man</button></li>
@@ -50,32 +50,14 @@
                         <button class="customNextBtn"></button>
                     </div>
                 </div>
-                <div class="content f jc-b owl-carousel" id="men">
-                    <div class="thing f fd-c ai-c jc-c">
+                <div class="content f jc-b owl-carousel" id="men" ng-controller="ClothesCtrl">
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in man">
                         <div>
-                            <buttton>Size ></buttton>
+                            <buttton>Size</buttton>
                         </div>
                         <img src="image/clothes/Livello%202.png" alt="">
                         <div class="f jc-b ai-c">
-                            <span>T-SHIRT</span><span>5,00 $</span>
-                        </div>
-                    </div>
-                    <div class="thing f fd-c ai-c">
-                        <div>
-                            <buttton>Size ></buttton>
-                        </div>
-                        <img src="image/clothes/Livello%202.png" alt="">
-                        <div class="f jc-b ai-c">
-                            <span>T-SHIRT</span><span>5,00 $</span>
-                        </div>
-                    </div>
-                    <div class="thing f fd-c ai-c">
-                        <div>
-                            <buttton>Size ></buttton>
-                        </div>
-                        <img src="image/clothes/Livello%202.png" alt="">
-                        <div class="f jc-b ai-c">
-                            <span>T-SHIRT</span><span>5,00 $</span>
+                            <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
                         </div>
                     </div>
                 </div>
@@ -83,7 +65,7 @@
             </div>
         </div>
 
-        <footer class="f jc-c ai-c">
+        <footer id="aboutus" class="f jc-c ai-c">
             <div class="discr f jc-c ai-c">
                 <span>ABOUT US</span>
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -94,6 +76,10 @@
 
     <script src="/libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="libs/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/data-clothes/clothes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script src="js/angularjs/app.js"></script>
+    <script src="js/angularjs/clothes-ctrl.js"></script>
     <script src="js/carousel.js"></script>
 
 </body></html>
