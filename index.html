@@ -26,16 +26,16 @@
             dolore
             magna aliqua.</span>
     </header>
-    <main id="products" class="f fd-c">
+    <main id="products" class="f fd-c" ng-controller="ClothesCtrl">
         <nav class="f ai-c main-nav-cor">
             <ul class="f ai-c main-nav-cor-ul">
-                <li><button>Man</button></li>
-                <li><button>Woman</button></li>
-                <li><button>Children</button></li>
+                <li><button id="manButton">Man</button></li>
+                <li><button id="womanButton">Woman</button></li>
+                <li><button id="childrenButton">Children</button></li>
             </ul>
-            <input type="button" value="See all products">
+            <input type="button" value="See all products" id="allButton">
         </nav>
-        <div class="clothes f fd-c">
+        <div class="clothes f fd-c" id="man">
             <header class="f ai-e jc-e">
                 <span>MEN</span>
                 <span></span>
@@ -57,17 +57,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="content jc-b owl-carousel" id="mbody" ng-controller="ClothesCtrl">
-                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in man">
-                        <div>
-                            <buttton>Size</buttton>
+                <div class="content jc-b owl-carousel" id="mbody">
+                    <div class="thing f fd-c ai-c jc-b" ng-repeat="clothes in manBody">
+                        <div class="f ai-s jc-b">
+                            <button class="openSize f fd-c">
+                                Size
+                            </button>
+                            <ul class="size f fd-c " >
+                                <li ng-repeat="size in clothes.size">{{size}}</li>
+                            </ul>
+                            <div>- 48</div>
+                            <button>Add to Cart</button>
                         </div>
                         <img src="image/clothes/Livello%202.png" alt="">
                         <div class="f jc-b ai-c">
                             <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="f fd-c">
@@ -88,14 +94,13 @@
                     </div>
                 </div>
                 <div class="content jc-b owl-carousel" id="mLegs">
-                    <div class="thing f fd-c ai-c jc-c">
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in manLeg">
                         <div>
                             <buttton>Size</buttton>
                         </div>
                         <img src="image/clothes/Livello%202.png" alt="">
                         <div class="f jc-b ai-c">
-                            <span>asdf</span>
-                            <span>asdf $</span>
+                            <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
                         </div>
                     </div>
                 </div>
@@ -118,20 +123,19 @@
                     </div>
                 </div>
                 <div class="content jc-b owl-carousel" id="mFootwear">
-                    <div class="thing f fd-c ai-c jc-c">
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in manFootwear">
                         <div>
                             <buttton>Size</buttton>
                         </div>
                         <img src="image/clothes/Livello%202.png" alt="">
                         <div class="f jc-b ai-c">
-                            <span>asdf</span>
-                            <span>asdf $</span>
+                            <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="clothes f fd-c">
+        <div class="clothes f fd-c" id="woman">
             <header class="f ai-e jc-e">
                 <span>Women</span>
                 <span></span>
@@ -153,8 +157,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="content jc-b owl-carousel" id="wbody" >
-                    <div class="thing f fd-c ai-c jc-c">
+                <div class="content jc-b owl-carousel" id="wbody">
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in womanBody">
                         <div>
                             <buttton>Size</buttton>
                         </div>
@@ -183,19 +187,18 @@
                     </div>
                 </div>
                 <div class="content jc-b owl-carousel" id="wLegs">
-                    <div class="thing f fd-c ai-c jc-c">
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in womanLeg">
                         <div>
                             <buttton>Size</buttton>
                         </div>
                         <img src="image/clothes/Livello%202.png" alt="">
                         <div class="f jc-b ai-c">
-                            <span>asdf</span>
-                            <span>asdf $</span>
+                            <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
                         </div>
                     </div>
                 </div>
             </div>
-             <div class="f fd-c">
+            <div class="f fd-c">
                 <div class="f jc-e nav">
                     <div class="f ai-c jc-c category">
                         <div></div>
@@ -213,30 +216,19 @@
                     </div>
                 </div>
                 <div class="content jc-b owl-carousel" id="wFootwear">
-                    <div class="thing f fd-c ai-c jc-c">
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in womanFootwear">
                         <div>
                             <buttton>Size</buttton>
                         </div>
                         <img src="image/clothes/Livello%202.png" alt="">
                         <div class="f jc-b ai-c">
-                            <span>asdf</span>
-                            <span>asdf $</span>
-                        </div>
-                    </div>
-                     <div class="thing f fd-c ai-c jc-c">
-                        <div>
-                            <buttton>Size</buttton>
-                        </div>
-                        <img src="image/clothes/Livello%202.png" alt="">
-                        <div class="f jc-b ai-c">
-                            <span>asdf</span>
-                            <span>asdf $</span>
+                            <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="clothes f fd-c">
+        <div class="clothes f fd-c" id="children">
             <header class="f ai-e jc-e">
                 <span>Children</span>
                 <span></span>
@@ -259,7 +251,7 @@
                     </div>
                 </div>
                 <div class="content jc-b owl-carousel" id="cbody" ng-controller="ClothesCtrl">
-                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in man">
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in childrenBody">
                         <div>
                             <buttton>Size</buttton>
                         </div>
@@ -288,19 +280,18 @@
                     </div>
                 </div>
                 <div class="content jc-b owl-carousel" id="cLegs">
-                    <div class="thing f fd-c ai-c jc-c">
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in childrenLeg">
                         <div>
                             <buttton>Size</buttton>
                         </div>
                         <img src="image/clothes/Livello%202.png" alt="">
                         <div class="f jc-b ai-c">
-                            <span>asdf</span>
-                            <span>asdf $</span>
+                            <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
                         </div>
                     </div>
                 </div>
             </div>
-             <div class="f fd-c">
+            <div class="f fd-c">
                 <div class="f jc-e nav">
                     <div class="f ai-c jc-c category">
                         <div></div>
@@ -318,14 +309,117 @@
                     </div>
                 </div>
                 <div class="content jc-b owl-carousel" id="cFootwear">
-                    <div class="thing f fd-c ai-c jc-c">
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in childrenFootwear">
                         <div>
                             <buttton>Size</buttton>
                         </div>
                         <img src="image/clothes/Livello%202.png" alt="">
                         <div class="f jc-b ai-c">
-                            <span>asdf</span>
-                            <span>asdf $</span>
+                            <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clothes f fd-c" id="all">
+            <header class="f ai-e jc-e">
+                <span>All</span>
+                <span></span>
+            </header>
+            <div class="f fd-c">
+                <div class="f jc-e nav">
+                    <div class="f ai-c jc-c category">
+                        <div></div>
+                        <div>Body</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <span id="thisDataABody">1</span>/<span id="allDataABody">5</span>
+                        </div>
+                        <div>
+                            <button class="customPrevBtnABody"></button>
+                            <button class="customNextBtnABody"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content jc-b owl-carousel" id="abody" ng-controller="ClothesCtrl">
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in allBody">
+                        <div class="f ai-s jc-b">
+                            <button class="f fd-c" ng-click="hide(clothes.id)">
+                                Size
+                            </button>
+                            <ul class="f fd-c " ng-hide="clothes.hide">
+                                <li ng-repeat="size in clothes.size" >
+                                <button ng-click="hide(clothes.id)">
+                                    {{size}}
+                                </button>
+                                </li>
+                            </ul>
+                            <div>- {{clothes.size[0]}}</div>
+                            <button>Add to Cart</button>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="f fd-c">
+                <div class="f jc-e nav">
+                    <div class="f ai-c jc-c category">
+                        <div></div>
+                        <div>Legs</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <span id="thisDataALegs">1</span>/<span id="allDataCALegs">5</span>
+                        </div>
+                        <div>
+                            <button class="customPrevBtnALegs"></button>
+                            <button class="customNextBtnALegs"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content jc-b owl-carousel" id="aLegs">
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in allLeg">
+                        <div>
+                            <buttton>Size</buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="f fd-c">
+                <div class="f jc-e nav">
+                    <div class="f ai-c jc-c category">
+                        <div></div>
+                        <div>Footwear</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <span id="thisDataAFootwear">1</span>/<span id="allDataAFootwear">5</span>
+                        </div>
+                        <div>
+                            <button class="customPrevBtnAFootwear"></button>
+                            <button class="customNextBtnAFootwear"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content jc-b owl-carousel" id="aFootwear">
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in allFootwear">
+                        <div>
+                            <buttton>Size</buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
                         </div>
                     </div>
                 </div>
@@ -344,17 +438,24 @@
     <script src="libs/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/data-clothes/clothes.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script src="js/popup/popup-main-nav.js"></script>
+<!--    <script src="js/popup/popup-size.js"></script>-->
     <script src="js/data-clothes/clothes.js"></script>
     <script src="js/angularjs/app.js"></script>
     <script src="js/angularjs/clothes-ctrl.js"></script>
     <script src="js/carousel/man/man-body.js"></script>
     <script src="js/carousel/man/man-leg.js"></script>
-    <script src="js/carousel/man/man-Footwear.js"></script>
+    <script src="js/carousel/man/man-footwear.js"></script>
     <script src="js/carousel/wooman/woman-leg.js"></script>
     <script src="js/carousel/wooman/woman-body.js"></script>
-    <script src="js/carousel/wooman/woman-Footwear.js"></script>
+    <script src="js/carousel/wooman/woman-footwear.js"></script>
     <script src="js/carousel/children/children-body.js"></script>
     <script src="js/carousel/children/children-leg.js"></script>
-    <script src="js/carousel/children/children-Footwear.js"></script>
+    <script src="js/carousel/children/children-footwear.js"></script>
+    <script src="js/carousel/all/all-body.js"></script>
+    <script src="js/carousel/all/all-leg.js"></script>
+    <script src="js/carousel/all/all-footwear.js"></script>
 
-</body></html>
+</body>
+
+</html>

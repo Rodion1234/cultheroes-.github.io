@@ -48,20 +48,4 @@ $(document).ready(function () {
     
 });
 
-function next(thisData, allData) {
-    if (thisData < allData) {
-        thisData++;
-    } else {
-        thisData = 1;
-    }
-    return thisData;
-};
 
-function prev(thisData, allData) {
-    if (thisData > 1) {
-        thisData--;
-    } else {
-        thisData = allData;
-    }
-    return thisData;
-};
