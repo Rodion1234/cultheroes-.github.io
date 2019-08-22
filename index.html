@@ -3,26 +3,97 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Flex test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clothinn</title>
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/flex-style.css">
-    <link rel="stylesheet" href="css/header-logo.css">
+    <link rel="stylesheet" href="/css/base.css">
 </head>
 
 <body>
-    <header class="f fd-c">
-        <div class="f logo ai-c">
-            <div class="logo-img"></div>
-            <span>Lipsum</span>
-            <div class="f fd-c">
-                <span>Lorem ipsum dolor sit amet</span>
-                <span>consectetur adipisicing elit, sed do eiusmod tempor incididunt</span>
-            </div>
-
-        </div>
-        <nav></nav>
+    <header class="f fd-c jc-c ai-c">
+        <nav>
+            <ul class="f jc-e ai-c header-ul-cor">
+                <li><img src="image/header/Livello%208.png" alt="logo"></li>
+                <li>Home</li>
+                <li>Products</li>
+                <li>About us</li>
+                <li><img src="image/header/fa-shopping-cart.png" alt="Shopping cart"></li>
+            </ul>
+        </nav>
+        <span>Our clothing , your comfort</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua.</span>
     </header>
-</body>
+    <main class="f fd-c">
+        <nav class="f ai-c main-nav-cor">
+            <ul class="f ai-c main-nav-cor-ul">
+                <li><button>Man</button></li>
+                <li><button>Woman</button></li>
+                <li><button>Children</button></li>
+            </ul>
+            <input type="button" value="See all products">
+        </nav>
+        <div class="clothes f fd-c">
+            <header class="f ai-e jc-e">
+                <span>MEN</span>
+                <span></span>
+            </header>
+            <div class="f fd-c">
+                <div class="f fd-c ai-e nav">
+                    <div>
+                        <span id="thisData">1</span>/<span id="allData">5</span>
+                    </div>
+                    <div>
+                        <button class="customPrevBtn"></button>
+                        <button class="customNextBtn"></button>
+                    </div>
+                </div>
+                <div class="content f jc-b owl-carousel" id="men">
+                    <div class="thing f fd-c ai-c jc-c">
+                        <div>
+                            <buttton>Size ></buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>T-SHIRT</span><span>5,00 $</span>
+                        </div>
+                    </div>
+                    <div class="thing f fd-c ai-c">
+                        <div>
+                            <buttton>Size ></buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>T-SHIRT</span><span>5,00 $</span>
+                        </div>
+                    </div>
+                    <div class="thing f fd-c ai-c">
+                        <div>
+                            <buttton>Size ></buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>T-SHIRT</span><span>5,00 $</span>
+                        </div>
+                    </div>
+                </div>
 
-</html>
+            </div>
+        </div>
+
+        <footer class="f jc-c ai-c">
+            <div class="discr f jc-c ai-c">
+                <span>ABOUT US</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation</span>
+            </div>
+        </footer>
+    </main>
+
+    <script src="/libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libs/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/carousel.js"></script>
+
+</body></html>
