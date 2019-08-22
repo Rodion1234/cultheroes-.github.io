@@ -1,5 +1,5 @@
+
 .clothes {
-    height: 580px;
     width: 80%;
     margin: 0 auto;
 }
@@ -7,7 +7,7 @@
 .clothes header {
     background: none;
     width: 100%;
-    height: 125px;
+    height: 70px;
 }
 
 .clothes header span:first-child {
@@ -33,6 +33,7 @@
     font-family: "Quicksand Bold";
     font-weight: bold;
     margin-right: 15px;
+    margin-top: 30px;
 }
 .clothes .nav div:first-child span{
     margin: 0px 5px;

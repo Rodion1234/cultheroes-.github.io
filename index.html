@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Clothinn</title>
 
-    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="css/base.css">
 </head>
 
 <body>
@@ -41,16 +41,224 @@
                 <span></span>
             </header>
             <div class="f fd-c">
-                <div class="f fd-c ai-e nav">
-                    <div>
-                        <span id="thisData">1</span>/<span id="allData">5</span>
+                <div class="f jc-e nav">
+                    <div class="f ai-c jc-c category">
+                        <div></div>
+                        <div>Body</div>
+                        <div></div>
                     </div>
                     <div>
-                        <button class="customPrevBtn"></button>
-                        <button class="customNextBtn"></button>
+                        <div>
+                            <span id="thisDataMBody">1</span>/<span id="allDataMBody">5</span>
+                        </div>
+                        <div>
+                            <button class="customPrevBtnMBody"></button>
+                            <button class="customNextBtnMBody"></button>
+                        </div>
                     </div>
                 </div>
-                <div class="content f jc-b owl-carousel" id="men" ng-controller="ClothesCtrl">
+                <div class="content jc-b owl-carousel" id="mbody" ng-controller="ClothesCtrl">
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in man">
+                        <div>
+                            <buttton>Size</buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="f fd-c">
+                <div class="f jc-e nav">
+                    <div class="f ai-c jc-c category">
+                        <div></div>
+                        <div>Legs</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <span id="thisDataMLegs">1</span>/<span id="allDataMLegs">5</span>
+                        </div>
+                        <div>
+                            <button class="customPrevBtnMLegs"></button>
+                            <button class="customNextBtnMLegs"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content jc-b owl-carousel" id="mLegs">
+                    <div class="thing f fd-c ai-c jc-c">
+                        <div>
+                            <buttton>Size</buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>asdf</span>
+                            <span>asdf $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="f fd-c">
+                <div class="f jc-e nav">
+                    <div class="f ai-c jc-c category">
+                        <div></div>
+                        <div>Footwear</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <span id="thisDataMFootwear">1</span>/<span id="allDataMFootwear">5</span>
+                        </div>
+                        <div>
+                            <button class="customPrevBtnMFootwear"></button>
+                            <button class="customNextBtnMFootwear"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content jc-b owl-carousel" id="mFootwear">
+                    <div class="thing f fd-c ai-c jc-c">
+                        <div>
+                            <buttton>Size</buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>asdf</span>
+                            <span>asdf $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clothes f fd-c">
+            <header class="f ai-e jc-e">
+                <span>Women</span>
+                <span></span>
+            </header>
+            <div class="f fd-c">
+                <div class="f jc-e nav">
+                    <div class="f ai-c jc-c category">
+                        <div></div>
+                        <div>Body</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <span id="thisDataWBody">1</span>/<span id="allDataWBody">5</span>
+                        </div>
+                        <div>
+                            <button class="customPrevBtnWBody"></button>
+                            <button class="customNextBtnWBody"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content jc-b owl-carousel" id="wbody" >
+                    <div class="thing f fd-c ai-c jc-c">
+                        <div>
+                            <buttton>Size</buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="f fd-c">
+                <div class="f jc-e nav">
+                    <div class="f ai-c jc-c category">
+                        <div></div>
+                        <div>Legs</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <span id="thisDataWLegs">1</span>/<span id="allDataWLegs">5</span>
+                        </div>
+                        <div>
+                            <button class="customPrevBtnWLegs"></button>
+                            <button class="customNextBtnWLegs"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content jc-b owl-carousel" id="wLegs">
+                    <div class="thing f fd-c ai-c jc-c">
+                        <div>
+                            <buttton>Size</buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>asdf</span>
+                            <span>asdf $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="f fd-c">
+                <div class="f jc-e nav">
+                    <div class="f ai-c jc-c category">
+                        <div></div>
+                        <div>Footwear</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <span id="thisDataWFootwear">1</span>/<span id="allDataWFootwear">5</span>
+                        </div>
+                        <div>
+                            <button class="customPrevBtnWFootwear"></button>
+                            <button class="customNextBtnWFootwear"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content jc-b owl-carousel" id="wFootwear">
+                    <div class="thing f fd-c ai-c jc-c">
+                        <div>
+                            <buttton>Size</buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>asdf</span>
+                            <span>asdf $</span>
+                        </div>
+                    </div>
+                     <div class="thing f fd-c ai-c jc-c">
+                        <div>
+                            <buttton>Size</buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>asdf</span>
+                            <span>asdf $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clothes f fd-c">
+            <header class="f ai-e jc-e">
+                <span>Children</span>
+                <span></span>
+            </header>
+            <div class="f fd-c">
+                <div class="f jc-e nav">
+                    <div class="f ai-c jc-c category">
+                        <div></div>
+                        <div>Body</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <span id="thisDataCBody">1</span>/<span id="allDataCBody">5</span>
+                        </div>
+                        <div>
+                            <button class="customPrevBtnCBody"></button>
+                            <button class="customNextBtnCBody"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content jc-b owl-carousel" id="cbody" ng-controller="ClothesCtrl">
                     <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in man">
                         <div>
                             <buttton>Size</buttton>
@@ -61,25 +269,92 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div class="f fd-c">
+                <div class="f jc-e nav">
+                    <div class="f ai-c jc-c category">
+                        <div></div>
+                        <div>Legs</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <span id="thisDataCLegs">1</span>/<span id="allDataCLegs">5</span>
+                        </div>
+                        <div>
+                            <button class="customPrevBtnCLegs"></button>
+                            <button class="customNextBtnCLegs"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content jc-b owl-carousel" id="cLegs">
+                    <div class="thing f fd-c ai-c jc-c">
+                        <div>
+                            <buttton>Size</buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>asdf</span>
+                            <span>asdf $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="f fd-c">
+                <div class="f jc-e nav">
+                    <div class="f ai-c jc-c category">
+                        <div></div>
+                        <div>Footwear</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <span id="thisDataCFootwear">1</span>/<span id="allDataCFootwear">5</span>
+                        </div>
+                        <div>
+                            <button class="customPrevBtnCFootwear"></button>
+                            <button class="customNextBtnCFootwear"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content jc-b owl-carousel" id="cFootwear">
+                    <div class="thing f fd-c ai-c jc-c">
+                        <div>
+                            <buttton>Size</buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>asdf</span>
+                            <span>asdf $</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <footer id="aboutus" class="f jc-c ai-c">
-            <div class="discr f jc-c ai-c">
-                <span>ABOUT US</span>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation</span>
-            </div>
-        </footer>
     </main>
+    <footer id="aboutus" class="f jc-c ai-c">
+        <div class="discr f jc-c ai-c">
+            <span>ABOUT US</span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation</span>
+        </div>
+    </footer>
 
-    <script src="/libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="libs/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/data-clothes/clothes.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script src="js/data-clothes/clothes.js"></script>
     <script src="js/angularjs/app.js"></script>
     <script src="js/angularjs/clothes-ctrl.js"></script>
-    <script src="js/carousel.js"></script>
+    <script src="js/carousel/man/man-body.js"></script>
+    <script src="js/carousel/man/man-leg.js"></script>
+    <script src="js/carousel/man/man-Footwear.js"></script>
+    <script src="js/carousel/wooman/woman-leg.js"></script>
+    <script src="js/carousel/wooman/woman-body.js"></script>
+    <script src="js/carousel/wooman/woman-Footwear.js"></script>
+    <script src="js/carousel/children/children-body.js"></script>
+    <script src="js/carousel/children/children-leg.js"></script>
+    <script src="js/carousel/children/children-Footwear.js"></script>
 
 </body></html>

@@ -1,9 +1,10 @@
 
-@import "/libs/bootstrap-reboot/bootstrap-reboot.min.css";
-@import "/libs/owlcarousel/assets/owl.carousel.min.css";
-@import "/libs/owlcarousel/assets/owl.theme.default.min.css";
+@import "../libs/bootstrap-reboot/bootstrap-reboot.min.css";
+@import "../libs/owlcarousel/assets/owl.carousel.min.css";
+@import "../libs/owlcarousel/assets/owl.theme.default.min.css";
 @import "style-flex.css";
 @import "header.css";
+@import "main.css";
 @import "main-nav.css";
 @import "main-clothes.css";
 @import "footer.css";

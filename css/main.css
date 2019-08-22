@@ -1,0 +1,27 @@
+
+.category{
+    font-size: 20px;
+    color: #424242;
+    font-family: "Quicksand Bold";
+    font-weight: bold;
+    width: 90%;
+    margin-right:auto;
+    padding-left: 11px;
+}
+.category div:first-child{
+    height: 2px;
+    width: 45%;
+    background: #cccccc;
+    color: red;  
+   
+}
+.category div:last-child{
+
+    height: 2px;
+    width: 45%;
+    background: #cccccc;
+    color: red; 
+}
+.category div:nth-child(2){
+    margin: 0 20px;
+}
