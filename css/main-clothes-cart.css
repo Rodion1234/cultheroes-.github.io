@@ -1,0 +1,116 @@
+.clothes .nav-cart {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.clothes .nav-cart .category {
+    width: 100%;
+}
+
+.clothes .nav-cart .category div:nth-child(2) {
+    width: 130px;
+    text-align: center;
+}
+.clothes .nav-cart div button{
+     border-radius: 3px;
+    border-color: #aa9b77;
+    background-color: #aa9b77;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Quicksand Bold";
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    margin: 0px 15px 0px 5px;
+    
+}
+
+.clothes .cart-content {
+    width: 100%;
+}
+
+.clothes .cart-content .thing {
+    height: 380px;
+    width: 315px;
+    border-radius: 3px;
+    background-color: #f5f6f7;
+    margin: 5px 10px;
+
+}
+
+.clothes .cart-content .thing:hover {
+    border: 1px solid #aa9b77;
+}
+
+.clothes .cart-content .thing div:first-child {
+    width: 80%;
+    font-size: 16px;
+    color: #424242;
+    font-family: "Quicksand Bold";
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.clothes .cart-content .thing div:first-child button {
+    background-color: #aa9b77;
+    border: none;
+    color: #f5f6f7;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.clothes .cart-content .thing div:first-child div {
+    font-size: 25px;
+    color: #424242;
+    font-family: "Quicksand Bold";
+    font-weight: 100;
+    font-style: italic;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.clothes .cart-content .thing div:first-child ul {
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    width: 47px;
+    padding: 0px;
+    top: 54px;
+    z-index: 9999;
+}
+
+.clothes .cart-content .thing div:first-child ul li {
+    padding: 0px;
+}
+
+.clothes .cart-content .thing div:first-child ul li button {
+    width: 100%;
+}
+
+.clothes .cart-content .thing div:last-child {
+    width: 80%;
+    font-size: 22px;
+    color: #424242;
+    font-family: "Quicksand Bold";
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.clothes .cart-content .thing img {
+    margin: auto 0px;
+    width: auto;
+}
+
+.clothes .cart-content .thing div:last-child span:first-child {
+    font-size: 18px;
+    color: #aa9b77;
+    font-family: "Quicksand Bold";
+    font-weight: bold;
+}
+
+@media all and (max-width: 420px) {
+    .clothes {
+        width: 100%;
+    }
+}

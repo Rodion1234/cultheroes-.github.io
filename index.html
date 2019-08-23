@@ -18,7 +18,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#aboutus">About us</a></li>
-                <li><img src="image/header/fa-shopping-cart.png" alt="Shopping cart"></li>
+                <li id="cartButton"><img src="image/header/fa-shopping-cart.png" alt="Shopping cart"></li>
             </ul>
         </nav>
         <span>Our clothing , your comfort</span>
@@ -63,7 +63,7 @@
                             <button class="openSize f fd-c">
                                 Size
                             </button>
-                            <ul class="size f fd-c " >
+                            <ul class="size f fd-c ">
                                 <li ng-repeat="size in clothes.size">{{size}}</li>
                             </ul>
                             <div>- 48</div>
@@ -250,7 +250,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content jc-b owl-carousel" id="cbody" ng-controller="ClothesCtrl">
+                <div class="content jc-b owl-carousel" id="cbody">
                     <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in childrenBody">
                         <div>
                             <buttton>Size</buttton>
@@ -343,21 +343,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="content jc-b owl-carousel" id="abody" ng-controller="ClothesCtrl">
+                <div class="content f jc-b owl-carousel" id="abody">
                     <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in allBody">
                         <div class="f ai-s jc-b">
-                            <button class="f fd-c" ng-click="hide(clothes.id)">
+                            <button class="f fd-c" ng-click="hide(clothes.id, size)">
                                 Size
                             </button>
                             <ul class="f fd-c " ng-hide="clothes.hide">
-                                <li ng-repeat="size in clothes.size" >
-                                <button ng-click="hide(clothes.id)">
-                                    {{size}}
-                                </button>
+                                <li ng-repeat="size in clothes.size">
+                                    <button ng-click="hide(clothes.id,size)" >
+                                        {{size}}
+                                    </button>
                                 </li>
                             </ul>
-                            <div>- {{clothes.size[0]}}</div>
-                            <button>Add to Cart</button>
+                            <div>- {{clothes.sizeNow}}</div>
+                            <button ng-click="addToCart(clothes)" class="insert">Add to Cart</button>
                         </div>
                         <img src="image/clothes/Livello%202.png" alt="">
                         <div class="f jc-b ai-c">
@@ -425,6 +425,35 @@
                 </div>
             </div>
         </div>
+        <div class="clothes f fd-c" id="cart">
+            <header class="f ai-e jc-e">
+                <span>Cart</span>
+                <span></span>
+            </header>
+            <div class="f fd-c">
+                <div class="f jc-e ai-c nav-cart">
+                    <div class="f ai-c jc-c category">
+                        <div></div>
+                        <div>Your clothes</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <button class="buy_All">Buy All</button>
+                    </div>
+                </div>
+                <div class="cart-content f fw jc-c" id="y" >
+                    <div class="thing f fd-c ai-c jc-c" ng-repeat="clothes in cart">
+                        <div>
+                            <buttton>Size</buttton>
+                        </div>
+                        <img src="image/clothes/Livello%202.png" alt="">
+                        <div class="f jc-b ai-c">
+                            <span>{{clothes.name}}</span><span>{{clothes.price}} $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer id="aboutus" class="f jc-c ai-c">
         <div class="discr f jc-c ai-c">
@@ -438,8 +467,8 @@
     <script src="libs/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/data-clothes/clothes.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
-    <script src="js/popup/popup-main-nav.js"></script>
-<!--    <script src="js/popup/popup-size.js"></script>-->
+
+    <!--    <script src="js/popup/popup-size.js"></script>-->
     <script src="js/data-clothes/clothes.js"></script>
     <script src="js/angularjs/app.js"></script>
     <script src="js/angularjs/clothes-ctrl.js"></script>
@@ -455,7 +484,9 @@
     <script src="js/carousel/all/all-body.js"></script>
     <script src="js/carousel/all/all-leg.js"></script>
     <script src="js/carousel/all/all-footwear.js"></script>
+<!--    <script src="js/carousel/cart.js"></script>-->
+    
+        <script src="js/popup/popup-main-nav.js"></script>
 
-</body>
 
-</html>
+</body></html>
